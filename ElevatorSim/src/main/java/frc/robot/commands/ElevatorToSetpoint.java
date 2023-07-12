@@ -15,7 +15,7 @@ public class ElevatorToSetpoint extends CommandBase{
 
     @Override
     public void execute(){
-        mElevator.reachGoal(setpoint);
+        mElevator.setPosition(setpoint);
     }
 
     @Override
