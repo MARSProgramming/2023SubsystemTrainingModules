@@ -88,6 +88,9 @@ public class ElevatorSimulation extends SubsystemBase implements AutoCloseable{
     public double getEncoderPosition(){
         return m_encoder.getDistance();
     }
+    public double getVelocity(){
+        return m_encoder.getRate();
+    }
   
     /** Stop the control loop and motor output. */
     public void stop() {

@@ -25,7 +25,6 @@ public class Robot extends TimedRobot {
 
   @Override
   public void disabledInit() {
-    m_robotContainer.getElevator().stop();
   }
 
   @Override
@@ -72,10 +71,4 @@ public class Robot extends TimedRobot {
 
   @Override
   public void testExit() {}
-
-  @Override
-  public void close(){
-    m_robotContainer.getElevator().close();
-    super.close();
-  }
 }

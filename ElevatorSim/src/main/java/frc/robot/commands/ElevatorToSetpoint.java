@@ -22,4 +22,9 @@ public class ElevatorToSetpoint extends CommandBase{
     public void end(boolean interrupted){
         mElevator.setPercentOutput(0);
     }
+
+    /*@Override
+    public boolean isFinished(){
+        return mElevator.atSetpoint(setpoint);
+    }*/
 }
